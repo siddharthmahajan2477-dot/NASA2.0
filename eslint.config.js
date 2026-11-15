@@ -5,7 +5,7 @@ import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 
 export default tseslint.config(
-  { ignores: ['dist', 'node_modules', 'playwright-report', 'test-results', 'public/assets/draco'] },
+  { ignores: ['dist', 'node_modules', 'playwright-report', 'test-results', 'test-results-*', 'public/assets/draco'] },
   js.configs.recommended,
   ...tseslint.configs.recommended,
   {

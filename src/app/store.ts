@@ -14,7 +14,10 @@ export const useAppStore = create<AppState>((set) => ({
   screen: 'welcome',
   preferences: initial.preferences,
   storageWarning: initial.warning,
-  navigate: (screen) => set({ screen }),
+  navigate: (screen) => {
+    if (window.location.hash !== `#${screen}`) window.history.pushState(null, '', `#${screen}`)
+    set({ screen })
+  },
   setPreference: (key, value) => set((state) => {
     const preferences = { ...state.preferences, [key]: value }
     return { preferences, storageWarning: savePreferences(preferences) }

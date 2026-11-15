@@ -6,4 +6,6 @@ dist/
 !.env.example
 playwright-report/
 test-results/
+test-results-*/
+.vercel/
 .DS_Store
