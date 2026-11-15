@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1N00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Collection xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1N00.xsd">
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:small_bodies.stooke.shape-models:data</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>Data Collection for the Stooke small bodies shape models bundle</title>
+    <information_model_version>1.23.0.0</information_model_version>
+    <product_class>Product_Collection</product_class>
+    <Citation_Information>
+      <publication_year>2025</publication_year>
+      <keyword>shape models</keyword> 
+      <description>Data Collection for the Stooke small bodies shape models bundle</description>             
+      <List_Author>
+        <Person>
+          <given_name>Philip</given_name>
+          <family_name>Stooke</family_name>
+        </Person>
+      </List_Author> 
+    </Citation_Information>    
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2025-09-03</modification_date>
+        <version_id>1.0</version_id>
+        <description>Migrated from PDS3 EAR_A_5_DDR_STOOKE_SHAPE_MODELS_V2_0.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Context_Area>
+    <Time_Coordinates>
+      <start_date_time xsi:nil="true" nilReason="inapplicable"/>
+      <stop_date_time xsi:nil="true" nilReason="inapplicable"/>
+    </Time_Coordinates>
+    <Primary_Result_Summary>
+      <purpose>Science</purpose>
+      <processing_level>Derived</processing_level>
+      <Science_Facets>
+        <wavelength_range>Visible</wavelength_range>
+        <discipline_name>Small Bodies</discipline_name>
+        <facet1>Shape Model</facet1>
+      </Science_Facets>
+    </Primary_Result_Summary>
+    <Investigation_Area>
+      <name>No Specific Investigation</name>
+      <type>Individual Investigation</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:investigation:individual.none</lid_reference>
+        <reference_type>collection_to_investigation</reference_type>
+      </Internal_Reference>
+    </Investigation_Area>
+    <Observing_System>
+      <name>Voyager</name>
+      <Observing_System_Component>
+        <name>VOYAGER 1</name>
+        <type>Host</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.vg1</lid_reference>
+          <reference_type>is_instrument_host</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>IMAGING SCIENCE SUBSYSTEM - NARROW ANGLE for VG1</name>
+        <type>Instrument</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument:vg1.issn</lid_reference>
+          <reference_type>is_instrument</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>VOYAGER 2</name>
+        <type>Host</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.vg2</lid_reference>
+          <reference_type>is_instrument_host</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>IMAGING SCIENCE SUBSYSTEM - NARROW ANGLE for VG2</name>
+        <type>Instrument</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument:vg2.issn</lid_reference>
+          <reference_type>is_instrument</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>                  
+    </Observing_System>
+    <Observing_System>
+      <name>Giotto Mission</name>
+      <Observing_System_Component>
+        <name>The Giotto Spacecraft</name>
+        <type>Host</type>
+        <Internal_Reference>
+          <lid_reference>urn:esa:psa:context:instrument_host:spacecraft.gio</lid_reference>
+          <reference_type>is_instrument_host</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>The Halley Multicolor Camera (HMC) for Giotto</name>
+        <type>Instrument</type>
+        <Internal_Reference>
+          <lid_reference>urn:esa:psa:context:instrument:gio.hmc</lid_reference>
+          <reference_type>is_instrument</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+    </Observing_System>    
+    <Observing_System>
+      <name>Vega Mission - Vega 1</name>
+      <Observing_System_Component>
+        <name>The Vega 1 Spacecraft</name>
+        <type>Host</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.vega1</lid_reference>
+          <reference_type>is_instrument_host</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>The Television System (TVS) for Vega 1</name>
+        <type>Instrument</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument:vega1.tvs</lid_reference>
+          <reference_type>is_instrument</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+    </Observing_System>
+    <Observing_System>    
+      <name>Vega Mission - Vega 2</name>
+      <Observing_System_Component>
+        <name>The Vega 2 Spacecraft</name>
+        <type>Host</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.vega2</lid_reference>
+          <reference_type>is_instrument_host</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>The Television System (TVS) for Vega 2</name>
+        <type>Instrument</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument:vega2.tvs</lid_reference>
+          <reference_type>is_instrument</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component> 
+      <Observing_System_Component>
+        <name>GALILEO ORBITER</name>
+        <type>Host</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.go</lid_reference>
+          <reference_type>is_instrument_host</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>Solid State Imaging System for GO</name>
+        <type>Instrument</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument:go.ssi</lid_reference>
+          <reference_type>is_instrument</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+    </Observing_System>
+    <Observing_System>
+      <name>Near Earth Asteroid Rendezvous Mission</name>
+      <Observing_System_Component>
+        <name>The Near-Earth Asteroid Rendezvous (NEAR) Shoemaker Spacecraft</name>
+        <type>Host</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.near</lid_reference>
+          <reference_type>is_instrument_host</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>The Multi-Spectral Imager (MSI) for the NEAR Shoemaker</name>
+        <type>Instrument</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument:msi.near</lid_reference>
+          <reference_type>is_instrument</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+    </Observing_System>
+    <Target_Identification>
+      <name>243 Ida</name>
+      <type>Asteroid</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:target:asteroid.243_ida</lid_reference>
+        <reference_type>collection_to_target</reference_type>
+      </Internal_Reference>
+    </Target_Identification>    
+    <Target_Identification>
+      <name>253 Mathilde</name>
+      <type>Asteroid</type>
+      <Internal_Reference>   
+        <lid_reference>urn:nasa:pds:context:target:asteroid.253_mathilde</lid_reference>
+        <reference_type>collection_to_target</reference_type>
+        </Internal_Reference>   
+    </Target_Identification>    
+    <Target_Identification>
+      <name>951 Gaspra</name>
+      <type>Asteroid</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:target:asteroid.951_gaspra</lid_reference>
+        <reference_type>collection_to_target</reference_type>
+      </Internal_Reference>        
+    </Target_Identification>    
+    <Target_Identification>
+      <name>Pandora</name>
+      <type>Satellite</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:target:satellite.saturn.pandora</lid_reference>
+        <reference_type>collection_to_target</reference_type>
+      </Internal_Reference>
+    </Target_Identification>    
+    <Target_Identification>
+      <name>Amalthea</name>
+      <type>Satellite</type>
+      <Internal_Reference>   
+        <lid_reference>urn:nasa:pds:context:target:satellite.jupiter.amalthea</lid_reference>
+        <reference_type>collection_to_target</reference_type>
+      </Internal_Reference>   
+    </Target_Identification>    
+    <Target_Identification>
+      <name>Thebe</name>
+      <type>Satellite</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:target:satellite.jupiter.thebe</lid_reference>
+        <reference_type>collection_to_target</reference_type>
+      </Internal_Reference>        
+    </Target_Identification>    
+    <Target_Identification>
+      <name>Larissa</name>
+      <type>Satellite</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:target:satellite.neptune.larissa</lid_reference>
+        <reference_type>collection_to_target</reference_type>
+      </Internal_Reference>
+    </Target_Identification>  
+    <Target_Identification>
+      <name>Proteus</name>
+      <type>Satellite</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:target:satellite.neptune.proteus</lid_reference>
+        <reference_type>collection_to_target</reference_type>
+      </Internal_Reference>
+    </Target_Identification>    
+    <Target_Identification>
+      <name>Janus</name>
+      <type>Satellite</type>
+      <Internal_Reference>   
+        <lid_reference>urn:nasa:pds:context:target:satellite.saturn.janus</lid_reference>
+        <reference_type>collection_to_target</reference_type>
+      </Internal_Reference>   
+    </Target_Identification>    
+    <Target_Identification>
+      <name>Epimetheus</name>
+      <type>Satellite</type>
+      <Internal_Reference>   
+        <lid_reference>urn:nasa:pds:context:target:satellite.saturn.epimetheus</lid_reference>
+        <reference_type>collection_to_target</reference_type>
+      </Internal_Reference>   
+    </Target_Identification>    
+    <Target_Identification>
+      <name>Prometheus</name>
+      <type>Satellite</type>
+      <Internal_Reference>   
+        <lid_reference>urn:nasa:pds:context:target:satellite.saturn.prometheus</lid_reference>
+        <reference_type>collection_to_target</reference_type>
+      </Internal_Reference>   
+    </Target_Identification>    
+    <Target_Identification>
+      <name>1P/Halley</name>
+      <type>Comet</type>
+      <Internal_Reference>   
+        <lid_reference>urn:nasa:pds:context:target:comet.1p_halley</lid_reference>
+        <reference_type>collection_to_target</reference_type>
+      </Internal_Reference>                 
+    </Target_Identification>
+  </Context_Area>
+  <Collection>
+    <collection_type>Data</collection_type>
+  </Collection>
+  <File_Area_Inventory>
+    <File>
+      <file_name>collection_small_bodies.stooke.shape-models_data_inventory.csv</file_name>
+      <local_identifier>data</local_identifier>
+      <records>12</records>
+    </File>
+    <Inventory>
+      <offset unit="byte">0</offset>
+      <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+      <records>12</records>
+      <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+      <field_delimiter>Comma</field_delimiter>
+      <Record_Delimited>
+        <fields>2</fields>
+        <groups>0</groups>
+        <Field_Delimited>
+          <name>Member Status</name>
+          <field_number>1</field_number>
+          <data_type>ASCII_String</data_type>
+          <maximum_field_length unit="byte">1</maximum_field_length>
+        </Field_Delimited>
+        <Field_Delimited>
+          <name>LIDVID_LID</name>
+          <field_number>2</field_number>
+          <data_type>ASCII_LIDVID_LID</data_type>
+          <maximum_field_length unit="byte">255</maximum_field_length>
+        </Field_Delimited>
+      </Record_Delimited>
+      <reference_type>inventory_has_member_product</reference_type>
+    </Inventory>
+  </File_Area_Inventory>
+</Product_Collection>

@@ -1,0 +1,122 @@
+[
+  {
+    "path": "public\\assets\\models\\astronauts\\Astronaut.glb",
+    "bytes": 762988,
+    "meshes": 1,
+    "materials": 2,
+    "images": 4,
+    "animations": 0,
+    "extensions": [
+      "KHR_draco_mesh_compression"
+    ]
+  },
+  {
+    "path": "public\\assets\\models\\astronauts\\Helmet.glb",
+    "bytes": 232496,
+    "meshes": 6,
+    "materials": 4,
+    "images": 0,
+    "animations": 1,
+    "extensions": [
+      "KHR_draco_mesh_compression"
+    ]
+  },
+  {
+    "path": "public\\assets\\models\\planets\\24881_Mars_1_6792.glb",
+    "bytes": 4032148,
+    "meshes": 1,
+    "materials": 1,
+    "images": 2,
+    "animations": 0,
+    "extensions": []
+  },
+  {
+    "path": "public\\assets\\models\\planets\\Earth_1_12756.glb",
+    "bytes": 12916400,
+    "meshes": 1,
+    "materials": 1,
+    "images": 2,
+    "animations": 0,
+    "extensions": []
+  },
+  {
+    "path": "public\\assets\\models\\planets\\moon_small.glb",
+    "bytes": 13799876,
+    "meshes": 1,
+    "materials": 1,
+    "images": 1,
+    "animations": 0,
+    "extensions": []
+  },
+  {
+    "path": "public\\assets\\models\\rockets\\Delta_II.glb",
+    "bytes": 4571040,
+    "meshes": 12,
+    "materials": 4,
+    "images": 4,
+    "animations": 0,
+    "extensions": []
+  },
+  {
+    "path": "public\\assets\\models\\rockets\\Saturn V.glb",
+    "bytes": 927212,
+    "meshes": 22,
+    "materials": 13,
+    "images": 8,
+    "animations": 23,
+    "extensions": []
+  },
+  {
+    "path": "public\\assets\\models\\rovers\\Mars 2020 Perseverance Rover.glb",
+    "bytes": 4987176,
+    "meshes": 68,
+    "materials": 47,
+    "images": 44,
+    "animations": 23,
+    "extensions": [
+      "KHR_draco_mesh_compression"
+    ]
+  },
+  {
+    "path": "public\\assets\\models\\spacecraft\\Apollo Lunar Module.glb",
+    "bytes": 716840,
+    "meshes": 134,
+    "materials": 12,
+    "images": 6,
+    "animations": 135,
+    "extensions": [
+      "KHR_draco_mesh_compression"
+    ]
+  },
+  {
+    "path": "public\\assets\\models\\spacecraft\\Ingenuity Mars Helicopter.glb",
+    "bytes": 2019408,
+    "meshes": 11,
+    "materials": 10,
+    "images": 16,
+    "animations": 0,
+    "extensions": [
+      "KHR_draco_mesh_compression"
+    ]
+  },
+  {
+    "path": "public\\assets\\models\\spacecraft\\NEAR Shoemaker.glb",
+    "bytes": 701808,
+    "meshes": 4,
+    "materials": 4,
+    "images": 6,
+    "animations": 0,
+    "extensions": [
+      "KHR_draco_mesh_compression"
+    ]
+  },
+  {
+    "path": "public\\assets\\models\\spacecraft\\smithsonian-apollo-11-command-module-columbia.glb",
+    "bytes": 14624036,
+    "meshes": 3,
+    "materials": 3,
+    "images": 6,
+    "animations": 0,
+    "extensions": []
+  }
+]

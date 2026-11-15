@@ -1,0 +1,255 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: near.spec.ts >> NEAR full six-quest investigation, real assets, locking, feedback, save and restart
+- Location: tests\near.spec.ts:17:1
+
+# Error details
+
+```
+Test timeout of 240000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=f1e3]:
+  - link "Skip to content" [ref=f1e4] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f1e5]:
+    - button "Echoes of Exploration home" [ref=f1e6] [cursor=pointer]:
+      - generic [aria-hidden] [ref=f1e7]: ◌
+      - generic [ref=f1e8]: ECHOES OF EXPLORATION
+    - generic [ref=f1e9]: INDEPENDENT SCIENCE ADVENTURE / NEAR SHOEMAKER / EROS
+    - navigation "Connected exploration" [ref=f1e10]:
+      - button "Chronosphere" [ref=f1e11] [cursor=pointer]
+      - button "Space Memory Archive" [ref=f1e12] [cursor=pointer]
+      - button "Mission Journeys" [ref=f1e13] [cursor=pointer]
+      - button "Explorer Progress" [ref=f1e14] [cursor=pointer]
+    - generic [ref=f1e15]:
+      - generic [ref=f1e16]: The missions ended. Their stories live on.
+      - strong [ref=f1e17]: OBSERVE. READ. SOLVE.
+  - main [ref=f1e18]:
+    - generic [ref=f1e19]:
+      - button "Back to briefing" [ref=f1e20] [cursor=pointer]
+      - paragraph [ref=f1e21]: ECHOES OF EXPLORATION / FIELD NOTES
+      - heading "The Landing Nobody Designed For" [level=1] [ref=f1e22]
+      - generic [ref=f1e23]:
+        - paragraph [ref=f1e24]: Built to look down. Still speaking from the ground.
+        - region "NEAR investigation" [ref=f1e25]:
+          - generic [ref=f1e26]:
+            - generic [ref=f1e27]:
+              - paragraph [ref=f1e28]: NEAR SHOEMAKER / INVESTIGATION 1 OF 6
+              - heading "Chasing a Moving Rock" [active] [level=2] [ref=f1e29]
+            - button "Restart investigation" [ref=f1e30] [cursor=pointer]
+          - list "Mission progress" [ref=f1e31]:
+            - listitem [ref=f1e32]:
+              - generic [ref=f1e33]: "1"
+              - generic [ref=f1e34]:
+                - text: Chasing a Moving Rock
+                - generic [ref=f1e35]: active
+            - listitem [ref=f1e36]:
+              - generic [ref=f1e37]: "2"
+              - generic [ref=f1e38]:
+                - text: A World Without a World's Shape
+                - generic [ref=f1e39]: locked
+            - listitem [ref=f1e40]:
+              - generic [ref=f1e41]: "3"
+              - generic [ref=f1e42]:
+                - text: Holding Orbit Around Eros
+                - generic [ref=f1e43]: locked
+            - listitem [ref=f1e44]:
+              - generic [ref=f1e45]: "4"
+              - generic [ref=f1e46]:
+                - text: Reading the Asteroid
+                - generic [ref=f1e47]: locked
+            - listitem [ref=f1e48]:
+              - generic [ref=f1e49]: "5"
+              - generic [ref=f1e50]:
+                - text: The Landing Nobody Designed For
+                - generic [ref=f1e51]: locked
+            - listitem [ref=f1e52]:
+              - generic [ref=f1e53]: "6"
+              - generic [ref=f1e54]:
+                - text: The Signal That Continued
+                - generic [ref=f1e55]: locked
+          - paragraph [ref=f1e56]: The target was moving. So was the route to reach it.
+          - group [ref=f1e57]:
+            - generic "Helmet Listen Mode" [ref=f1e58] [cursor=pointer]
+            - option "0.75×"
+            - option "1×" [selected]
+            - option "1.25×"
+            - option "1.5×"
+          - list "Current objectives" [ref=f1e61]:
+            - listitem [ref=f1e62]:
+              - generic [aria-hidden] [ref=f1e63]: ○
+              - text: Inspect Journey milestones
+              - generic [ref=f1e64]: required
+            - listitem [ref=f1e65]:
+              - generic [aria-hidden] [ref=f1e66]: ○
+              - text: Inspect Solar arrays
+              - generic [ref=f1e67]: required
+            - listitem [ref=f1e68]:
+              - generic [aria-hidden] [ref=f1e69]: ○
+              - text: Collect A rendezvous takes more than a straight line
+              - generic [ref=f1e70]: required
+            - listitem [ref=f1e71]:
+              - generic [aria-hidden] [ref=f1e72]: ○
+              - text: Collect The meeting that had to wait
+              - generic [ref=f1e73]: required
+            - listitem [ref=f1e74]:
+              - generic [aria-hidden] [ref=f1e75]: ○
+              - text: Validate the evidence-based reconstruction
+          - link "Open evidence & reconstruction ↓" [ref=f1e76] [cursor=pointer]:
+            - /url: "#quest-workbench"
+          - paragraph [ref=f1e77]: Investigation saves on this browser. Progress does not sync between devices.
+        - generic [ref=f1e78]:
+          - paragraph [ref=f1e79]: Drag to orbit · Scroll or pinch to zoom · Select a numbered component
+          - button "Reset camera" [ref=f1e80] [cursor=pointer]
+        - generic [ref=f1e81]:
+          - generic [ref=f1e82]:
+            - generic [ref=f1e83]:
+              - generic:
+                - button "Inspect Solar arrays" [ref=f1e84] [cursor=pointer]: "1"
+                - button "Inspect High-gain antenna" [ref=f1e85] [cursor=pointer]: "2"
+                - button "Inspect Spacecraft body" [ref=f1e86] [cursor=pointer]: "3"
+            - paragraph [ref=f1e90]:
+              - text: EROS / ILLUSTRATIVE DISPLAY STAGING
+              - generic [ref=f1e91]: Illustrative reconstruction, not surveyed landing-site topography.
+          - complementary "Spacecraft component notes" [ref=f1e92]:
+            - paragraph [ref=f1e93]: FIELD INVESTIGATION / NEAR SHOEMAKER
+            - heading "An orbiter with another chapter ahead." [level=2] [ref=f1e94]
+            - paragraph [ref=f1e95]: Explore the spacecraft, then follow the Eros journey below the quest workbench.
+            - group "Choose a spacecraft component" [ref=f1e96]:
+              - button "Solar arrays" [ref=f1e97] [cursor=pointer]:
+                - generic [aria-hidden] [ref=f1e98]: "01"
+                - text: Solar arrays
+              - button "High-gain antenna" [ref=f1e99] [cursor=pointer]:
+                - generic [aria-hidden] [ref=f1e100]: "02"
+                - text: High-gain antenna
+              - button "Spacecraft body" [ref=f1e101] [cursor=pointer]:
+                - generic [aria-hidden] [ref=f1e102]: "03"
+                - text: Spacecraft body
+            - group [ref=f1e103]:
+              - generic "Component notes" [ref=f1e104] [cursor=pointer]
+              - paragraph [ref=f1e106]: Select a marker on the spacecraft, or choose a component above. Each has a different job in the journey.
+        - region "Evidence and reconstruction" [ref=f1e107]:
+          - generic [ref=f1e108]:
+            - paragraph [ref=f1e109]: FIELD RECORDS / 0 DISCOVERED
+            - heading "Inspect. Read. Make the connection." [level=2] [ref=f1e110]
+            - paragraph [ref=f1e111]: Use the spacecraft above to inspect required components. Open the records below, then collect the evidence you need.
+          - generic [ref=f1e112]:
+            - group [ref=f1e113]:
+              - generic "A rendezvous takes more than a straight line Open record" [ref=f1e114] [cursor=pointer]:
+                - text: A rendezvous takes more than a straight line
+                - generic [ref=f1e115]: Open record
+            - group [ref=f1e116]:
+              - generic "The meeting that had to wait Open record" [ref=f1e117] [cursor=pointer]:
+                - text: The meeting that had to wait
+                - generic [ref=f1e118]: Open record
+          - generic [ref=f1e119]:
+            - heading "Listen to the evidence" [level=3] [ref=f1e120]
+            - group [ref=f1e121]:
+              - generic "Helmet Listen Mode" [ref=f1e122] [cursor=pointer]
+              - option "0.75×"
+              - option "1×" [selected]
+              - option "1.25×"
+              - option "1.5×"
+            - group [ref=f1e125]:
+              - generic "Helmet Listen Mode" [ref=f1e126] [cursor=pointer]
+              - option "0.75×"
+              - option "1×" [selected]
+              - option "1.25×"
+              - option "1.5×"
+          - generic [ref=f1e129]:
+            - paragraph [ref=f1e130]: YOUR RECONSTRUCTION
+            - group "Chasing a Moving Rock challenges" [ref=f1e131]:
+              - group "Reconstruct the journey." [ref=f1e133]:
+                - list "Reconstruct the journey." [ref=f1e135]:
+                  - listitem [ref=f1e136]:
+                    - generic [aria-hidden] [ref=f1e137]: "1"
+                    - generic [ref=f1e138]: Eros orbital insertion
+                    - generic [ref=f1e139]:
+                      - button "Move Eros orbital insertion earlier" [disabled] [ref=f1e140]: ↑
+                      - button "Move Eros orbital insertion later" [ref=f1e141] [cursor=pointer]: ↓
+                  - listitem [ref=f1e142]:
+                    - generic [aria-hidden] [ref=f1e143]: "2"
+                    - generic [ref=f1e144]: Initial Eros flyby after the aborted burn
+                    - generic [ref=f1e145]:
+                      - button "Move Initial Eros flyby after the aborted burn earlier" [ref=f1e146] [cursor=pointer]: ↑
+                      - button "Move Initial Eros flyby after the aborted burn later" [ref=f1e147] [cursor=pointer]: ↓
+                  - listitem [ref=f1e148]:
+                    - generic [aria-hidden] [ref=f1e149]: "3"
+                    - generic [ref=f1e150]: Earth gravity assist
+                    - generic [ref=f1e151]:
+                      - button "Move Earth gravity assist earlier" [ref=f1e152] [cursor=pointer]: ↑
+                      - button "Move Earth gravity assist later" [ref=f1e153] [cursor=pointer]: ↓
+                  - listitem [ref=f1e154]:
+                    - generic [aria-hidden] [ref=f1e155]: "4"
+                    - generic [ref=f1e156]: Mathilde flyby
+                    - generic [ref=f1e157]:
+                      - button "Move Mathilde flyby earlier" [ref=f1e158] [cursor=pointer]: ↑
+                      - button "Move Mathilde flyby later" [ref=f1e159] [cursor=pointer]: ↓
+                  - listitem [ref=f1e160]:
+                    - generic [aria-hidden] [ref=f1e161]: "5"
+                    - generic [ref=f1e162]: Launch from Earth
+                    - generic [ref=f1e163]:
+                      - button "Move Launch from Earth earlier" [ref=f1e164] [cursor=pointer]: ↑
+                      - button "Move Launch from Earth later" [disabled] [ref=f1e165]: ↓
+              - group "Support the navigation plan." [ref=f1e166]:
+                - generic [ref=f1e168]:
+                  - generic [ref=f1e169] [cursor=pointer]:
+                    - checkbox "Meet a moving target" [ref=f1e170]
+                    - generic [ref=f1e171]: Meet a moving target
+                  - generic [ref=f1e172] [cursor=pointer]:
+                    - checkbox "Use Earth encounter to change the trajectory" [ref=f1e173]
+                    - generic [ref=f1e174]: Use Earth encounter to change the trajectory
+                  - generic [ref=f1e175] [cursor=pointer]:
+                    - checkbox "Fly directly to a fixed rock" [ref=f1e176]
+                    - generic [ref=f1e177]: Fly directly to a fixed rock
+                  - generic [ref=f1e178] [cursor=pointer]:
+                    - checkbox "Treat the 1998 flyby as orbital insertion" [ref=f1e179]
+                    - generic [ref=f1e180]: Treat the 1998 flyby as orbital insertion
+            - generic [ref=f1e181]:
+              - button "Check reconstruction" [ref=f1e182] [cursor=pointer]
+              - button "Show a hint" [ref=f1e183] [cursor=pointer]
+              - button "Reset current challenge" [ref=f1e184] [cursor=pointer]
+        - region "Eros explorer and mission journey" [ref=f1e185]:
+          - heading "Follow the journey to Eros" [level=2] [ref=f1e186]
+          - paragraph [ref=f1e187]: Historical dates; schematic paths. No measured trajectory samples, physical display scale, geographic orientation or exact touchdown pin are claimed. Early cruise milestones are context, not a solar-system-scale route.
+          - generic [ref=f1e188]:
+            - button "Reset asteroid camera" [ref=f1e189] [cursor=pointer]
+            - paragraph [ref=f1e190]: Swipe or drag to rotate; pinch or scroll to zoom. Display orientation is not a verified geographic frame.
+            - paragraph [ref=f1e195]: NASA Eros STL; neutral illustrative material, not photographic surface colour. No invented craters. Original shape retained. The small light point represents approach progress, not spacecraft geometry or a geographic landing pin.
+          - button "Record Eros shape observation" [ref=f1e196] [cursor=pointer]
+          - navigation "Journey milestones" [ref=f1e197]:
+            - 'button "1996-02-17: Launch from Earth" [pressed] [ref=f1e198] [cursor=pointer]'
+            - 'button "1997-06-27: Mathilde flyby" [ref=f1e199] [cursor=pointer]'
+            - 'button "1998-01-23: Earth gravity assist" [ref=f1e200] [cursor=pointer]'
+            - 'button "1998-12-23: Initial Eros flyby after the aborted burn" [ref=f1e201] [cursor=pointer]'
+            - 'button "2000-02-14: Eros orbital insertion" [ref=f1e202] [cursor=pointer]'
+            - 'button "2000-04-30: Operational orbit about 50 km from centre" [ref=f1e203] [cursor=pointer]'
+            - 'button "2000-07-13: Lower orbital phase about 35 km from centre" [ref=f1e204] [cursor=pointer]'
+            - 'button "2001-02-12: Controlled descent and touchdown south of Himeros" [ref=f1e205] [cursor=pointer]'
+            - 'button "2001-02-14: Surface gamma-ray science extension announced" [ref=f1e206] [cursor=pointer]'
+            - 'button "2001-02-28: Last contact" [ref=f1e207] [cursor=pointer]'
+          - generic [ref=f1e208]:
+            - heading "Launch from Earth" [level=3] [ref=f1e209]
+            - paragraph [ref=f1e210]: 1996-02-17
+            - paragraph [ref=f1e211]: Select the orbital and descent milestones to compare their geometry.
+          - button "Next journey stage" [ref=f1e212] [cursor=pointer]
+          - group [ref=f1e213]:
+            - 'generic "Approximate landing region: south of Himeros" [ref=f1e214]'
+        - group [ref=f1e215]:
+          - generic "NEAR Shoemaker — complete records & sources" [ref=f1e216] [cursor=pointer]
+        - group [ref=f1e217]:
+          - generic "About this reconstruction & sources" [ref=f1e218] [cursor=pointer]
+  - contentinfo [ref=f1e219]:
+    - generic [ref=f1e220]: LOOK CLOSER. THERE’S A STORY HERE.
+    - generic [ref=f1e221]: Independent project. Not affiliated with or endorsed by NASA.
+```

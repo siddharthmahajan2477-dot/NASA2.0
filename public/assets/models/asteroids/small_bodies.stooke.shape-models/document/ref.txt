@@ -1,0 +1,409 @@
+References for the Stooke Small Bodies Shape Models Bundle
+----------------------------------------------------------
+
+Abergel, A., Traitment et Analyses des Images Transmises Lors des Surols de la Comete de Halley par les Sondes Vega,
+Ph.D. Thesis of the University of Paris, 1987.
+
+Abergel, A., 
+L'imagerie Numerique Appliquee a la Technique Spaciale, 
+Revue du Palais de la Decouverte 17, 14-31, 1988.  
+
+Abergel, A. and J.L. Bertaux, 
+Evolution of Comet Halley in Early March 1986 as Observed from Vega Pictures,   
+Astronomy and Astrophysics, 187, 829-834, 1987.                      
+
+Abergel, A. and J.L. Bertaux, 
+Le Noyau de la Comete de Halley d'Apres les Images Transmises par les Sondes Vega, 
+1988 Journees de Planetologie, 183-186, 1988.                  
+                                                  
+Abergel, A. and J.L. Bertaux, 
+Rotation States of the Nucleus of Comet Halley Compatible with Spacecraft Images, 
+Icarus 86, 21-29, 1990.
+doi:10.1016/0019-1035(90)90195-F
+        
+Abergel, A., J.L. Bertaux, and E. Dimarellis, 
+Image Processing on Vega Pictures, 
+Proceedings of the International Symposium on the Diversity and Similarity of Comets, ESA SP-278, 689-694, 1987.                 
+
+Abergel, A., J.L. Bertaux, and E. Dimarellis, 
+La Decouverte du Noyau de la Comete de Halley, 
+Proceedings of PIXIM 88, 425-444, 1988.  
+
+Abergel, A., J.L. Bertaux, and E. Dimarellis,  
+Surface features and the rotation state of Halley's comet nucleus, 
+Annales Geophysicae 7, 129-140, 1989. 
+
+Abergel, A., J.L. Bertaux, G.A. Avanesov, V.I. Tarnopol'Skij, and B.S. Zhukov, 
+Photometric Characteristics of the Vega 1 and Vega 2 CCD Cameras for the Observations of Comet Halley, Applied Optics 26, 4457-4468, 1987. 
+doi:10.1364/AO.26.004457   
+
+Archinal, B.A., M.F. A'Hearn, E. Bowell, A. Conrad, G.J. Consolmagno, R. Courtin, T. Fukushima, D. Hestroffer, J.L. Hilton, G.A. Krasinsky, G. Neumann, J. Oberst, P.K. Seidelmann, P. Stooke, D.J. Tholen, P.C. Thomas, and I.P. Williams,
+Report of the IAU Working Group on Cartographic Coordinates and Rotational Elements: 2009, 
+Celestial Mechanics and Dynamical Astronomy 109, 101-135, 2011. 
+doi:10.1007/s10569-010-9320-4                          
+
+Asmar, S.W., and N.A. Renzetti, 
+The Deep Space Network as an Instrument for Radio Science Research, 
+Jet Propulsion Laboratory Publication 80-93, Rev. 1, 1993.     
+
+Barros, P.A., 
+Voyager Flight Data System Flight Software Description, 
+Reissued January 1988, 618-236, Rev. A., Jet Propulsion Laboratory, California Institute of Technology, Pasadena, California, JPL D-1772, 1988.
+
+Belton, M.J.S., W.H. Julian, A.J. Anderson, and B.E.A. Mueller, 
+The spin state and homogeneity of comet Halley's nucleus, 
+Icarus 93 183-193, 1991.
+doi:10.1016/0019-1035(91)90207-A                         
+
+Belton, Michael J.S., K.P. Klaasen, M.C. Clary, J.L. Anderson, C.D. Anger, M.H. Carr, C.R. Chapman, M.E. Davies, R. Greeley, D. Anderson, L.K. Bolef, T.E. Townsend, R. Greenberg, J.W. Head III, G. Neukum, C.B. Pilcher, J. Veverka, P.J. Gierasch, F.P. Fanale, A.P. Ingersoll, H. Masursky, D. Morrison, J.B. Pollack, 
+The Galileo Solid-State Imaging Experiment, 
+Space Science Reviews Vol. 60, pp. 413-455, 1992.
+doi:10.1007/BF00216864                                
+
+Benesh, M., and P. Jepsen, 
+Voyager Imaging Science Subsystem Calibration Report, 
+Voyager Document Number 618-802, Jet Propulsion Laboratory, California Institute of Technology, Pasadena, California, 1978.                             
+
+Bertaux, J.L. and A. Abergel, 
+Some Physical Characteristics of Halley's Nucleus as Inferred from Vega and Giotto Pictures, 
+Proceedings of the 20th ESLAB Symposium on the Exploration of Halley's Comet, ESA SP-250, Vol 2, 341-345, 1986.                                      
+
+D'Amario, L.A., L.E. Bright, and A.A. Wolf, 
+Galileo trajectory design,
+Space Science Reviews Volume 60, Issue 1-4, pp. 23-78, 1992,
+doi:10.1007/BF00216849
+
+Danielson, G.E., P.N. Kupferman, T.V. Johnson, and L.A. Soderblom,
+Radiometric Performance of the Voyager Cameras, 
+Journal of Geophysical Research 86, 8683-8689, 1981.
+doi:10.1029/JA086iA10p08683
+
+Danz, M., G. Elter, T. Mangoldt, D. Mohlmann, B. Rubbert, and U. Weidlich, 
+Processing for the Vega-Mission to Comet Halley, 
+Computer Analysis of Images and Patterns, Proceedings of the II. International Conference on Automatic Processing, Mathematical Research Series 40, 222-226, L.P. Yaroslavskii, A. Rosenfeld, and W. Wilhelmi (eds.), 1987. 
+        
+Dimarellis, E., J.L. Bertaux, and A. Abergel, 
+Restoration of Vega-1 Pictures of Comet Halley's Nucleus: A New Method Revealing Clear Contours and Jets, Astronomy and Astrophysics 208, 327-330, 1989.                                  
+ 
+Encounters with Comet Halley, The first results,
+Nature, Volume 321, No. 6067, 15 May 1986.                          
+
+Foldy, L., K. Szego, and I. Toth, 
+On the Rotation of Comet Halley,
+ADS Bibicode: 1990STIN...9216961F, 1990.
+                              
+Harch, Ann P., 
+IPPS Boresight Offset Database Validation, 
+JPL Interoffice Memorandum, VGR-006-87, 1987.  
+
+Harch, Ann P., 
+IPPS Boresight Offset Database Update Philosophy and Offset Update for Voyager 2 Wide Angle Camera and PPS, 
+JPL Interoffice Memorandum, VGR-002-88, 1988a.       
+                            
+Harch, Ann P., 
+IPPS Boresight Offset Database Update for the Voyager-2 Scan-platform Instruments, 
+JPL Interoffice Memorandum, VGR-003-88, 1988b.                           
+            
+Harch, Ann P., 
+IPPS Boresight Offset Database Update Clarification, 
+JPL Interoffice Memorandum, Voyager-APH-88-007, 1988c.                                      
+                       
+Hawkins, S. Edward III, E.H. Darlington, S.L. Murchie, K. Peacock, T.J. Harris, C.B. Hersman, M.J. Elko, D.T. Prendergast, B.W. Ballard, R.E. Gold, J. Veverka, and M.S. Robinson,  
+Multi-spectral imager on the Near Earth Asteroid Rendezvous Mission,  
+Space Science Reviews 82, 31-100, 1997,
+doi:10.1023/A:1005099211710
+                      
+Horanyi, M., T.I. Gombosi, T.E. Cravens, K. Kecskemety, A.F. Nagy, and K. Szego,
+The friable sponge model of cometary nucleus, 
+Proceedings of the International Conference on Cometary Exploration, Vol I, 59, 1982.
+
+Horanyi, M., T.I. Gombosi, T.E. Cravens, A. Korosmezey, K. Kecskemety, A.F. Nagy, and K. Szego, 
+The Friable Sponge Model of a Cometary Nucleus, 
+The Astrophysical Journal 278, 449-455, 1984.
+doi:10.1086/161810                                                      
+   
+Keller, H. U., W. K. H. Schmidt, K. Wilhelm, C. Becker, W. Curdt, W. Engelhardt, H. Hartwig, J. R. Kramm, H. J. Meyer, R. Schmidt, F. Gliem, E. Krahn, H. P. Schmidt, G. Schwarz, J. J. Turner, P. Boyries, S. Cazes, F. Angrilli, G. Bianchini, G. Fanti, P. Brunello, W. A. Delamere, H. J. Reitsema, C. Jamar, and C. Cucciaro,
+The Halley Multicolour Camera.
+J. Phys. E: Sci. Instr. 20, 807-820, 1987.
+doi:10.1088/0022-3735/20/6/039
+
+Klaasen, K.P., M.C. Clary, James R. Janesick, 
+Charge-Coupled Device Television Camera for Nasa's Galileo Mission To Jupiter, 
+Opt. Eng. 23, 334-342, 1984.
+doi:10.1117/12.7973290     
+                                                                   
+Kohlhase, C., 
+The Voyager Neptune Travel Guide, 
+JPL Publication 89-24, 276 pp., Jet Propulsion Laboratory, Pasadena, CA, 1989.                                                
+ 
+Kondor, A., 
+Destripping of the Vega-1 TV Images, 
+MPAE-W-100-90-04, 1990a.
+                                     
+Kondor, A., 
+Noise Supression Version of the Method of Convergent Weights, 
+MPAE-W-100-90-05, 1990b.
+
+Martin, M.D., G. Laughlin, and C.L. Stanley, 
+Planetary Image Conversion Task, 
+Final Report, JPL Publication 85-50, 1985.                                            
+                                                                  
+Merenyi, E., L. Foldy, K. Szego, I. Toth, and A. Kondor, 
+The Landscape of Comet Halley,
+Icarus 86, 9-20, 1990.
+doi: 10.1016/0019-1035(90)90194-E                                                                 
+ 
+Mohlmann, D., M. Danz, and H. Borner,   
+Properties of the Nucleus of P/Halley, 
+Proceedings of the International Symposium on the Diversity and Similarity of Comets, ESA SP-278, 487-492, 1987.
+
+Mohlmann, D., H. Borner, M. Danz, G. Elter, T. Mangoldt, B. Rubbert, U. Weidlich, 
+Physical Properties of P/Halley-Derived from Vega-Images, 
+ESA Proceedings of the 20th ESLAB Symposium on the Exploration of Halley's Comet, SP-250, Vol 2, 339-340, 1986a
+                               
+Mohlmann, D., M. Danz, G. Elter, T. Mangoldt, B. Rubbert, U. Weidlich, H. Lorenz, and G. Richter, 
+Image Processing of Vega-TV Observations, 
+Proceedings of the 20th ESLAB Symposium on the Exploration of Halley's Comet, ESA SP-250, Vol I, 313-315, 1986b.
+                                                   
+Morrison, D., 
+Voyages to Saturn, 
+NASA SP-451, 227 pp., National Aeronautics and Space Administration, Washington, DC, 1982.                                   
+ 
+Multimission Image Processing Laboratory, Real-Time Processing Subsystem, Software Design Document, 
+Jet Propulsion Laboratory, California Institute of Technology, Pasadena, California, JPL D-2468, 1985. 
+ 
+Murchie, S.L., M. Robinson, S.E. Hawkins III, A. Harch, P. Helfenstein, P. Thomas, K. Peacock, W. Owen, G. Heyler, P. Murphy, E.H. Darlington, A. Keeney, R. Gold, B. Clark, N. Izenberg, J.F. Bell III, W. Merline, J. Veverka, 
+Inflight Calibration of the NEAR Multispectral Imager, 
+Icarus Vol. 140, No. 1, 66-91, 1999,   
+doi:10.1006/icar.1999.6118.                                             
+
+Nave, E.L., 
+Voyager Spaceflight Operations Plan, Volume IV, Sec. IV, Rev. B, 618-505, Spaceflight Telemetry Dictionary and Launch Operational Limits, Reissued 21 July 1980, Jet Propulsion Laboratory, California Institute of Technology, Pasadena, California, 1980. 
+
+O'Neil, W.J., 
+Project Galileo Mission Status, 
+paper IAF-91-468, presented at the 42nd Congress of the International Astronautical Federation, Montreal, Canada October 5-11, 1991.   
+
+O'Neil, W.J., 
+Galileo on Jupiter Approach, 
+paper IAF-95-Q.5.06, presented at the 46th Congress of the International Astronautical Federation, Oslo, Norway, October 2-6, 1995.                                                        
+ 
+O'Neil, W.J., 
+Project Galileo Mission Status, 
+paper IAF-96-Q.2.01, presented at the 47th Congress of the International Astronautical Federation, Beijing, China, October 7-11, 1996. 
+         
+Reinhard, R. and B. Battrick (eds.) 
+The ESA Mission to Comet Halley,
+ESA SP-1066, 1986.
+
+Reinhard, R. and B. Battrick (eds.) 
+The Giotto Mission, 
+ESA SP-1077, 1986.
+                                                 
+Richter, A.K., P.W. Daly, M.I. Verigin, K.I. Gringauz, G. Erdos, K. Kecskemety, A.J. Somogyi, K. Szego, A.   Varga, and S. McKenna-Lawlor, 
+Quasi-Periodic Variations, of Cometary Ion Fluxes at Large Distances from Comet Halley, 
+Annales Geophysicae 7, 115-120, 1989.                                                  
+
+Sagdeev, R.Z., and K. Szego,
+Near Nuclear Region of Comet Halley Based on the Imaging Results of the Vega Mission, 
+Report KFKI-1987-35/C, 27 pp., Hungarian Acad. Sci, 1987.                    
+                       
+Sagdeev, R.Z., G.A. Avanesov, I.V. Barinov, A.I. Debabov, V.A. Krasikov, V.I. Moroz, V.A. Shamis, V.I. Tarnopolski, D.A. Usikov, YA.L. Ziman, B.S. Zhukov, F. Szabo, K. Szego, A. Kondor, E. Merenyi, B.A. Smith, S. Larson, P. Cruvellier, A. Abergel, J.L. Bertaux, J. Blamont, M. Danz, D. Mohlmann, H. Stiller, and H.P. Zapfe,
+Comet Halley: Nucleus and Jets (Results of the Vega Mission), 
+Advances of Space Research, 5, 95-104, 1985.
+doi:10.1016/0273-1177(85)90072-9              
+ 
+Sagdeev, R.Z., G.A. Avanesov, I.V. Barinov, V.I. Kostenko, V.A. Krasikov, V.A. Shamis, K.G. Sukhanov, V.I. Tarnopolski, YU.K. Zaiko, S.I. Zatsepin, YA.L. Ziman, B.S. Zhukov, F. Szabo, L. Szabo, K. Szego, A. Balazs, G. Endroczi, M. Gardos, M. Kanyo, Z. Nyitrai, I. Renyi, P. Rusznyak, B. Smith, S. Szalai, I. Toth, L. Varhalmi, M. Zsenei, P. Cruvellier, M. Detaille, T. Nguyen-Trong, A. Abergel, J.L. Bertaux, J. Blamont, E. Dimarellis, G.N. Dulnev, G. Tsukanova, and B.I. Valnicek,
+TV Experiment in Vega Mission: Strategy, Hardware, Software, 
+Proceedings of the 20th ESLAB Symposium, ESA SP-250, Vol II, 289, 1986b.  
+                          
+Sagdeev, R.Z., G.A. Avanesov, V.A. Krasikov, V.A. Shamis, V.A. Tarnopolski, YA.L. Ziman, A.A. Kuzmin, K. 
+Szego, E. Merenyi, and B.A. Smith, 
+TV Experiment in Vega Mission: Image Processing Technique and some Results, 
+Proceedings of the 20th ESLAB Symposium, ESA SP-250, Vol II, 295, 1986c.                     
+                       
+Sagdeev, R.Z., J. Blamont, A.A. Galeev, V.I. Moroz, V.D. Shapiro, V.I. Shevchenko, K. Szego, 
+Vega Spacecraft Encounters with Comet Halley, 
+Nature, 321, 259-262, 1986d.
+doi:10.1038/321259a0
+         
+Sagdeev, R.Z., V.A. Krasikov, V.A. Shamis, V.I. Tarnopolski, K. Szego, I. Toth, B. Smith, S. Larson, and E. Merenyi, 
+Rotation Period and Spin Axis of Comet Halley, 
+Proceedings of the 20th ESLAB Symposium, ESA SP-250, Vol II, 335, 1986e.        
+                 
+Sagdeev, R.Z., F. Szabo, G.A. Avanesov, P. Cruvellier, L. Szabo, K. Szego, A. Abergel, A. Balazs, I.V. Barinov, J.L. Bertaux, J. Blamont, M. Detaille, E. Dimarellis, G.N. Dulnev, G. Krasikov, T. Nguyen-Trong, Z. Nyitrai, I. Renyi, P. Rusznyak, V.A. Shamis, B. Smith, K.G. Sukhanov, S. Szalai, V.I. Tarnopolski, I. Toth, G. Tsukanova, B.I. Valnicek, L. Varhalmi, YU.K. Zaiko, S.I. Zatsepin, YA.L. Ziman, M. Zsenei, and B.S. Zhukov,
+Television Observations of Comet Halley from Vega Spacecraft, 
+Nature 321, 262-265, 1986f.  
+doi:10.1038/321262a0                                              
+
+Sagdeev, R.Z., YA.L. Ziman, G.A. Avanesov, V.A. Tarnopolski, V.A. Krasikov, D.A. Usikov, A.S. Debabov, K.G. Sukhanov, A.Yu. Kogan, V.N. Kheifets, and K. Szego, 
+TV Experiment in Vega Mission: Nucleus Shape Reconstruction and Coma Tomography, Methods and Preliminary Results,
+Proceedings of the 20th ESLAB Symposium, ESA SP-250, Vol II, 307, 1986g.                           
+                    
+Sagdeev, R.Z., V.D. Shapiro, V.I. Shevchenko, and K. Szego, 
+Jet Formation in Comets,
+Astrophysical Letters, 25, 247, 1987.                                              
+                       
+Sagdeev, R.Z., K. Szego, B.A. Smith, S. Larson, E. Merenyi, A. Kondor, and I. Toth, 
+The Rotation of P/Halley, 
+The Astronomical Journal, 97, 546-551, 1989.                        
+doi:10.1086/115004
+
+Santo, A.G., S.C. Lee, and R.E. Gold,   
+NEAR Spacecraft and Instrumentation, 
+The Journal of the Astronautical Sciences, Vol. 43, No. 4, pp. 373-397, October-December 1995. 
+                               
+Schmidt, W.K.H., H.U. Keller, K. Wilhelm, C. Arpigny, C. Barbieri, L. Biermann, R.M. Bonnet, S. Cazes, C.B. Cosmovici, W.A. Delamere, W.F. Huebner, D.W. Hughes, C. Jamar, C. Malaise, H.J. Reitsema, P. Seige, and F.L. Whipple,
+The Giotto Halley Multicolour Camera.
+In 'The Giotto Mission - Its Scientific Investigations' (Reinhard, R. and B. Battrick, Eds.) ESA SP-1077, pp. 149-172. ESA Publications Division, ESTEC Noordwijk, 1986.          
+
+This issue of Science provides a detailed account of Voyager 1's encounter with Jupiter. 
+Science, Vol. 204, No. 4392, 1979.                                                
+                  
+This issue of Science provides a detailed account of Voyager 2's encounter with Jupiter. 
+Science, Vol. 206, No. 4421, 1979.                                                
+    
+This issue of Science provides a detailed account of Voyager 1's encounter with Saturn                
+Science, Vol. 212, No. 4491, 1981   
+                              
+This issue of Science provides a detailed account of Voyager 2's encounter with Saturn                                                                            
+Science, Vol. 215, No. 4532, 1982.
+
+This issue of Science provides a detailed account of Voyager 2's encounter with Uranus
+Science, Vol. 233, No. 4759, 1986.
+
+This issue of Science provides a detailed account of Voyager 2's encounter with  Neptune
+Science, Vol. 246, No. 4936, 1989.
+    
+Seidelmann, P.K., V.K. Abalakin, M. Bursa, M.E. Davies, C. de Bergh, J.H. Lieske, J. Oberst, J.L. Simon, E.M. Standish, P. Stooke, and P.C. Thomas,
+Report of the IAU/IAG working group on cartographic coordinates and rotational elements of the planets and satellites: 2000, 
+Celestial Mechanics and Dynamical Astronomy, 82, 83-111, 2002.
+doi:10.1023/A:1013939327465                                   
+
+Simonelli, D.P., J. Veverka, P.C. Thomas, P. Helfenstein, and M.J.S. Belton, 
+Analysis of Gaspra lightcurves using Galileo shape and photometric models. 
+Icarus 114, 387-402, 1995.
+doi:10.1006/icar.1995.1070
+                                                      
+Smith, B., K. Szego, S. Larson, E. Merenyi, I. Toth, R.Z. Sagdeev, G.A. Avanesov, V.A. Krasikov, V.A.  Shamis, and V.I. Tarnopolski, 
+The Spacial Distribution of Dust Jets Seen at Vega-2 Fly-By, 
+Proceedings of the 20th ESLAB Symposium, ESA SP-250, Vol II, 327, 1986.                                          
+                          
+Smith, B.A., K. Szego, R.Z. Sagdeev, and S. Larson,
+Rejection of a Proposed 7.4-Day Rotation Period of the Comet Halley Nucleus, 
+Nature 326, 573-574, 1987.
+doi:10.1038/326573a0                       
+
+Snyder, L., 
+Television optics for the Voyager Mission to Jupiter and Saturn, 
+Proceedings of the Society of Photo-Optical Instrumentation Engineers, v. 183, 1979,
+doi:10.1117/12.957423.            
+ 
+This issue of Space Science Reviews is a collection of the first six of twelve papers providing a detailed description of the Voyager objectives and investigations of the Jupiter and Saturn planetary systems, Papers seven through twelve appear Space Science Reviews, Vol. 21, No.3, 1977. Space Science Reviews, Vol. 21, No. 2, 1977.
+                              
+This issue of Space Science Reviews is a collection of six papers, seven through twelve, providing a detailed description of the Voyager objectives and investigations of the Jupiter and Saturn planetary systems, Papers one through six appear in Space Science Reviews, Vol. 21, No. 2, 1977. Space Science Reviews, Vol. 21, No. 3, 1977.
+                         
+Stooke, P., 
+The topography of Epimetheus, 
+Earth, Moon, and Planets 63, 67-83, 1993a.
+doi:10.1007/BF00572138
+                                          
+Stooke, P., 
+The topography of Janus,    
+Earth, Moon, and Planets 62, 223-237, 1993b.                         
+doi:10.1007/BF00572300
+
+Stooke, P., 
+The shapes and surface features of Prometheus and Pandora, 
+Earth, Moon, and Planets 62, 199-221, 1993c.                                                      
+doi:10.1007/BF00572299
+                           
+Stooke, P., 
+The geology of Amalthea,    
+Earth, Moon, and Planets 64, 187-197, 1994a.                          
+doi:10.1007/BF00604489
+
+Stooke, P., 
+The surfaces of Larissa and Proteus, 
+Earth, Moon, and Planets 65, 31-54, 1994b.
+doi:10.1007/BF00572198
+                   
+Stooke, P., 
+The surface of the asteroid 951 Gaspra. 
+Earth, Moon, and Planets 75, 53-75, 1996.
+doi:10.1007/BF00056288
+                                             
+Szego, K.,
+Modeling a Cometary Nucleus, 
+Astrophysics and Space Science 144, 439-449, 1988a.                
+doi:10.1007/BF00793197
+
+Szego, K., 
+The Nucleus of Comet Halley, 
+Acta Physics, Hungary, 64, 267-275, 1988b.                           
+doi:10.1007/BF03158539
+
+Szego, K.,
+What Do We Know About the Nucleus of Comet Halley?, 
+Bioastronomy-The Next Steps, Marx, G. (ed.), Kluwer Academic Publisher, 31-37 pp., 1988c. 
+doi:10.1007/978-94-009-2959-3_5                            
+
+Szego, K., 
+P/Halley, the Model Comet, in View of the Imaging Experiment Onboard the Vega Spacecraft, 
+Comets in the Post-Halley Era, Newburn, R.L., et al (eds.), Kluwer Academic Publisher, Netherlands, Vol 2, 713, 1991.
+                           
+Szego, K., A. Kondor, I. Toth, R.Z. Sagdeev, K. Wilhelm, and H.U. Keller, 
+Reconstruction of the Orientation and Shape of the Nucleus of Comet Halley, 
+Proceedings on Diversity and Similarity of Comets, Brussels, Belgium, ESA SP-278, 463-469, 1987.
+                                                         
+Szego, K., A. Kondor, S. Larson, E. Merenyi, R.Z. Sagdeev, B.A. Smith, and I. Toth, 
+Analysis of the Rotation of Comet Halley, 
+Advances in Space Research, 9, 73-76, 1989a.
+doi:10.1016/0273-1177(89)90242-1
+
+Szego, K., E. Merenyi, A. Kondor, B.A. Smith, I. Toth, and L. Foldy, 
+Surface and Dust Features Seen on the Nucleus of Comet Halley, 
+Advances in Space Research, 9, 85-88, 1989b.
+doi:10.1016/0273-1177(89)90245-7
+
+Szego, K., I. Toth, Z. Szatmary, B.A. Smith, A. Kondor, and E. Merenyi, 
+Dust Photometry in the Near Nucleus of Comet Halley, 
+Advances in Space Research, 9, 89-92, 1989c.
+doi:10.1016/0273-1177(89)90246-9  
+      
+Thomas, N., and H.U. Keller, 
+Photometric calibration of the Halley multicolor camera,
+Applied Optics, Vol 29, 1503-1519, 1990. 
+doi:10.1364/AO.29.001503                                   
+
+Thomas, P.C., J. Veverka, D. Simonelli, P. Helfenstein, B. Carcich, M.J.S. Belton, M.E. Davies, and C.        
+Chapman, 
+The Shape of Gaspra,
+Icarus 107, 25-36, 1994.
+doi:10.1006/icar.1994.1004               
+
+Thomas, P.C., M.J.S. Belton, B. Carcich, C.R. Chapman, M.E. Davies, R. Sullivan, and J. Veverka, 
+The Shape of Ida, 
+Icarus 120, 20-32, 1996.
+doi:   
+10.1006/icar.1996.0033
+                                     
+Thomas, P.C., J. Veverka, J.F. Bell, B.E. Clark, B. Carcich, J. Joseph, M. Robinson, L.A. McFadden, M.C.   
+Malin, C.R. Chapman, W. Merline, and S. Murchie, 
+Mathilde: Size Shape and Geology,
+Icarus 140, 17-27, 1999.
+doi:10.1006/icar.1999.6121                              
+
+Toth, I., K. Szego, and A. Kondor, 
+Dust Photometry in the Near Nucleus Region of Comet Halley from Vega-2 Observations, 
+Proceedings on Diversity and Similarity of Comets, Brussels, Belgium, ESA SP-278, 343, 1987.  
+        
+Voyager Neptune/Interstellar Mission Flight Science Office, Science and Missions Systems Handbook, Rev. D, 
+Jet Propulsion Laboratory, California Institute of Technology, Pasadena, California, JPL D-498, 1987.                             
+                                          
+Voyager Neptune/Interstellar Mission: Flight Science Office Science and Mission Systems Handbook, 
+JPL Project Document 618-128, Jet Propulsion Laboratory, Pasadena, CA, 1987.            
+                                      
+Yeates, C.M., T.V. Johnson, L. Colin, F.P. Fanale, L. Frank, and D.M. Hunten, 
+Galileo: Exploration of Jupiter's System, 
+NASA SP-479, 1985.            

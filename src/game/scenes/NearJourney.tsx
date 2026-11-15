@@ -1,0 +1,13 @@
+import { useEffect, useState } from 'react'
+import SmallBodyViewer from './SmallBodyViewer'
+import { nearReference, nearSources } from '../../data/nearRecords'
+import { useNearQuestStore } from '../quests/nearStore'
+export default function NearJourney({ initialStage=0, onStage }: { initialStage?:number; onStage?:(stage:number)=>void } = {}) {
+ const [stage,setStage] = useState(Math.max(0,Math.min(initialStage,nearReference.timeline.length-1)))
+ useEffect(()=>setStage(Math.max(0,Math.min(initialStage,nearReference.timeline.length-1))),[initialStage])
+ const send = useNearQuestStore(s=>s.send)
+ const event = nearReference.timeline[stage]
+ const phase = stage===4||stage===5 ? 'orbit' : stage===6 ? 'close' : stage===7 ? 'descent' : stage>=8 ? 'surface' : 'approach'
+ function select(i:number) { setStage(i); onStage?.(i); send({type:'inspect',id:i<4?'journey':i<=6?'orbit':i===7?'descent':'surface'}) }
+ return <section aria-label="Eros explorer and mission journey"><h2>Follow the journey to Eros</h2><p>Historical dates; schematic paths. No measured trajectory samples, physical display scale, geographic orientation or exact touchdown pin are claimed. Early cruise milestones are context, not a solar-system-scale route.</p><SmallBodyViewer path={`${import.meta.env.BASE_URL}assets/models/terrain/Asteroid 433 Eros.stl`} phase={phase} /><button className="text-button" onClick={()=>send({type:'inspect',id:'shape'})}>Record Eros shape observation</button><nav className="component-list" aria-label="Journey milestones">{nearReference.timeline.map((e,i)=><button key={e.date} aria-pressed={stage===i} onClick={()=>select(i)}>{e.date}: {e.event}</button>)}</nav><div aria-live="polite"><h3>{event.event}</h3><p>{event.date}</p><p>{phase==='orbit'||phase==='close'?'Loops distinguish orbital phases schematically. Published distances are from the centre, not constant surface clearances.':phase==='descent'?'The open line illustrates moving inward rather than staying in orbit. Its endpoint is illustrative, not a registered landing coordinate.':'Select the orbital and descent milestones to compare their geometry.'}</p></div><button className="text-button" onClick={()=>select(Math.min(stage+1,nearReference.timeline.length-1))}>Next journey stage</button><details><summary>Approximate landing region: south of Himeros</summary><p>The source mesh axes and longitude convention have not been matched to the historical coordinates. No precise mesh marker is used. NASA's planned-site mosaic has south toward the top; use its arrow for regional context.</p><a href={nearSources.site.url} target="_blank" rel="noopener noreferrer">Official NASA landing-site image — NASA/JPL/JHUAPL</a></details></section>
+}

@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-15",
+  "transport": "Production build, normal HTTP; external YouTube not stubbed",
+  "results": [
+    {
+      "id": "DWm3mywDMrM",
+      "before": {
+        "title": "",
+        "text": "",
+        "videoPresent": false
+      },
+      "after": {
+        "text": ""
+      }
+    },
+    {
+      "id": "JcvMAL_lTHU",
+      "before": {
+        "title": "",
+        "text": "",
+        "videoPresent": false
+      },
+      "after": {
+        "text": ""
+      }
+    },
+    {
+      "id": "qMbHE_VXI-8",
+      "before": {
+        "title": "",
+        "text": "",
+        "videoPresent": false
+      },
+      "after": {
+        "text": ""
+      }
+    },
+    {
+      "id": "CFUmUIU_tXY",
+      "before": {
+        "title": "",
+        "text": "",
+        "videoPresent": false
+      },
+      "after": {
+        "text": ""
+      }
+    }
+  ]
+}

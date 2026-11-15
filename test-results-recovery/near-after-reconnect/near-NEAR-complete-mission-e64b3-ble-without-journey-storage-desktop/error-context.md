@@ -1,0 +1,182 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: near.spec.ts >> NEAR complete mission remains playable without journey storage
+- Location: tests\near.spec.ts:18:1
+
+# Error details
+
+```
+Test timeout of 240000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - link "Skip to content" [ref=e4] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e5]:
+    - button "Echoes of Exploration home" [ref=e6] [cursor=pointer]:
+      - generic [aria-hidden] [ref=e7]: ◌
+      - generic [ref=e8]: ECHOES OF EXPLORATION
+    - generic [ref=e9]: INDEPENDENT SCIENCE ADVENTURE / NEAR SHOEMAKER / EROS
+    - navigation "Connected exploration" [ref=e10]:
+      - button "Chronosphere" [ref=e11] [cursor=pointer]
+      - button "Space Memory Archive" [ref=e12] [cursor=pointer]
+      - button "Mission Journeys" [ref=e13] [cursor=pointer]
+      - button "Explorer Progress" [ref=e14] [cursor=pointer]
+    - generic [ref=e15]:
+      - generic [ref=e16]: The missions ended. Their stories live on.
+      - strong [ref=e17]: OBSERVE. READ. SOLVE.
+  - main [ref=e18]:
+    - generic [ref=e19]:
+      - button "Back to briefing" [ref=e20] [cursor=pointer]
+      - paragraph [ref=e21]: ECHOES OF EXPLORATION / FIELD NOTES
+      - heading "The Landing Nobody Designed For" [level=1] [ref=e22]
+      - generic [ref=e23]:
+        - paragraph [ref=e24]: Built to look down. Still speaking from the ground.
+        - region "NEAR investigation" [ref=e25]:
+          - generic [ref=e26]:
+            - generic [ref=e27]:
+              - paragraph [ref=e28]: NEAR SHOEMAKER / INVESTIGATION 6 OF 6
+              - heading "Investigation complete" [active] [level=2] [ref=e29]
+            - button "Restart investigation" [ref=e30] [cursor=pointer]
+          - list "Mission progress" [ref=e31]:
+            - listitem [ref=e32]:
+              - generic [ref=e33]: "1"
+              - generic [ref=e34]:
+                - text: Chasing a Moving Rock
+                - generic [ref=e35]: completed
+            - listitem [ref=e36]:
+              - generic [ref=e37]: "2"
+              - generic [ref=e38]:
+                - text: A World Without a World's Shape
+                - generic [ref=e39]: completed
+            - listitem [ref=e40]:
+              - generic [ref=e41]: "3"
+              - generic [ref=e42]:
+                - text: Holding Orbit Around Eros
+                - generic [ref=e43]: completed
+            - listitem [ref=e44]:
+              - generic [ref=e45]: "4"
+              - generic [ref=e46]:
+                - text: Reading the Asteroid
+                - generic [ref=e47]: completed
+            - listitem [ref=e48]:
+              - generic [ref=e49]: "5"
+              - generic [ref=e50]:
+                - text: The Landing Nobody Designed For
+                - generic [ref=e51]: completed
+            - listitem [ref=e52]:
+              - generic [ref=e53]: "6"
+              - generic [ref=e54]:
+                - text: The Signal That Continued
+                - generic [ref=e55]: completed
+          - paragraph [ref=e56]: Your investigation still works in this session, but the latest progress could not be saved. Keep this page open to continue.
+        - generic [ref=e57]:
+          - paragraph [ref=e58]: Drag to orbit · Scroll or pinch to zoom · Select a numbered component
+          - button "Reset camera" [ref=e59] [cursor=pointer]
+        - generic [ref=e60]:
+          - generic [ref=e61]:
+            - generic [ref=e62]:
+              - generic:
+                - button "Inspect Solar arrays" [ref=e63] [cursor=pointer]: "1"
+                - button "Inspect High-gain antenna" [pressed] [ref=e64] [cursor=pointer]: "2"
+                - button "Inspect Spacecraft body" [ref=e65] [cursor=pointer]: "3"
+            - paragraph [ref=e69]:
+              - text: EROS / ILLUSTRATIVE DISPLAY STAGING
+              - generic [ref=e70]: Illustrative reconstruction, not surveyed landing-site topography.
+          - complementary "Spacecraft component notes" [ref=e71]:
+            - paragraph [ref=e72]: FIELD INVESTIGATION / NEAR SHOEMAKER
+            - heading "An orbiter with another chapter ahead." [level=2] [ref=e73]
+            - paragraph [ref=e74]: Explore the spacecraft, then follow the Eros journey below the quest workbench.
+            - group "Choose a spacecraft component" [ref=e75]:
+              - button "Solar arrays" [ref=e76] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e77]: "01"
+                - text: Solar arrays
+              - button "High-gain antenna" [pressed] [ref=e78] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e79]: "02"
+                - text: High-gain antenna
+              - button "Spacecraft body" [ref=e80] [cursor=pointer]:
+                - generic [aria-hidden] [ref=e81]: "03"
+                - text: Spacecraft body
+            - group [ref=e82]:
+              - generic "High-gain antenna · field note" [ref=e83] [cursor=pointer]
+              - generic [ref=e84]:
+                - paragraph [ref=e85]: ENGINEERING NOTE
+                - heading "High-gain antenna" [level=3] [ref=e86]
+                - paragraph [ref=e87]: The dish concentrates radio communication toward Earth. Pointing is important for a high-gain link.
+                - paragraph [ref=e88]: Science must reach Earth to become useful. After landing the team relied on the low-gain antenna instead.
+                - link "NASA surface communications ↗" [ref=e89] [cursor=pointer]:
+                  - /url: https://science.nasa.gov/solar-system/near-shoemaker-ready-to-gather-data-on-surface-of-eros/
+                - button "Close component note" [ref=e90] [cursor=pointer]
+        - region "NEAR mission conclusion" [ref=e91]:
+          - paragraph [ref=e92]: 6 INVESTIGATIONS / ONE RECOVERED STORY
+          - heading "An orbiter reached the ground. Its work continued." [level=2] [ref=e93]
+          - paragraph [ref=e94]: The landing was a choice. The next signal was an opportunity.
+          - paragraph [ref=e95]: You followed a spacecraft to a target that would not stand still, then learned why staying beside it required careful measurement.
+          - paragraph [ref=e96]: The team brought an orbiter down slowly. When it survived, they made room for another question about the rock beneath it.
+          - paragraph [ref=e97]: NEAR stayed on Eros. Its measurements travelled home.
+          - list [ref=e98]:
+            - listitem [ref=e99]:
+              - strong [ref=e100]: Chasing a Moving Rock
+              - paragraph [ref=e101]: You recovered the route to a moving target.
+            - listitem [ref=e102]:
+              - strong [ref=e103]: A World Without a World's Shape
+              - paragraph [ref=e104]: Shape changes the questions navigation must answer.
+            - listitem [ref=e105]:
+              - strong [ref=e106]: Holding Orbit Around Eros
+              - paragraph [ref=e107]: Orbit was a sequence of measured decisions, not a fixed circle.
+            - listitem [ref=e108]:
+              - strong [ref=e109]: Reading the Asteroid
+              - paragraph [ref=e110]: Together the instruments reveal more than any one view.
+            - listitem [ref=e111]:
+              - strong [ref=e112]: The Landing Nobody Designed For
+              - paragraph [ref=e113]: The descent was planned. Survival gave it another purpose.
+            - listitem [ref=e114]:
+              - strong [ref=e115]: The Signal That Continued
+              - paragraph [ref=e116]: You recovered why a signal from the ground changed the science.
+          - group [ref=e117]:
+            - generic "Review the 11 recovered evidence records" [ref=e118] [cursor=pointer]
+          - paragraph [ref=e119]: The missions ended. Their stories live on.
+          - paragraph [ref=e120]: Revisit the spacecraft, review the evidence, or restart the investigation above.
+        - region "Eros explorer and mission journey" [ref=e121]:
+          - heading "Follow the journey to Eros" [level=2] [ref=e122]
+          - paragraph [ref=e123]: Historical dates; schematic paths. No measured trajectory samples, physical display scale, geographic orientation or exact touchdown pin are claimed. Early cruise milestones are context, not a solar-system-scale route.
+          - generic [ref=e124]:
+            - button "Reset asteroid camera" [ref=e125] [cursor=pointer]
+            - paragraph [ref=e126]: Swipe or drag to rotate; pinch or scroll to zoom. Display orientation is not a verified geographic frame.
+            - paragraph [ref=e131]: NASA Eros STL; neutral illustrative material, not photographic surface colour. No invented craters. Original shape retained. The small light point represents approach progress, not spacecraft geometry or a geographic landing pin.
+          - button "Record Eros shape observation" [ref=e132] [cursor=pointer]
+          - navigation "Journey milestones" [ref=e133]:
+            - 'button "1996-02-17: Launch from Earth" [ref=e134] [cursor=pointer]'
+            - 'button "1997-06-27: Mathilde flyby" [ref=e135] [cursor=pointer]'
+            - 'button "1998-01-23: Earth gravity assist" [ref=e136] [cursor=pointer]'
+            - 'button "1998-12-23: Initial Eros flyby after the aborted burn" [ref=e137] [cursor=pointer]'
+            - 'button "2000-02-14: Eros orbital insertion" [ref=e138] [cursor=pointer]'
+            - 'button "2000-04-30: Operational orbit about 50 km from centre" [ref=e139] [cursor=pointer]'
+            - 'button "2000-07-13: Lower orbital phase about 35 km from centre" [ref=e140] [cursor=pointer]'
+            - 'button "2001-02-12: Controlled descent and touchdown south of Himeros" [ref=e141] [cursor=pointer]'
+            - 'button "2001-02-14: Surface gamma-ray science extension announced" [pressed] [ref=e142] [cursor=pointer]'
+            - 'button "2001-02-28: Last contact" [ref=e143] [cursor=pointer]'
+          - generic [ref=e144]:
+            - heading "Surface gamma-ray science extension announced" [level=3] [ref=e145]
+            - paragraph [ref=e146]: 2001-02-14
+            - paragraph [ref=e147]: Select the orbital and descent milestones to compare their geometry.
+          - button "Next journey stage" [ref=e148] [cursor=pointer]
+          - group [ref=e149]:
+            - 'generic "Approximate landing region: south of Himeros" [ref=e150]'
+        - group [ref=e151]:
+          - generic "NEAR Shoemaker — complete records & sources" [ref=e152] [cursor=pointer]
+        - group [ref=e153]:
+          - generic "About this reconstruction & sources" [ref=e154] [cursor=pointer]
+  - contentinfo [ref=e155]:
+    - generic [ref=e156]: LOOK CLOSER. THERE’S A STORY HERE.
+    - generic [ref=e157]: Independent project. Not affiliated with or endorsed by NASA.
+```

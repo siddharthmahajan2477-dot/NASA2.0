@@ -1,0 +1,4 @@
+Google Draco glTF decoder. Copyright 2016 The Draco Authors.
+Apache License 2.0; see LICENSE.txt.
+Unmodified files copied from three 0.180.0 examples/jsm/libs/draco/gltf.
+Project: https://google.github.io/draco/

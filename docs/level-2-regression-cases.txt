@@ -1,0 +1,12 @@
+# Original 11 reported failures. Run with --test-list and retain all assertions.
+[desktop] > apollo-quests.spec.ts > full Apollo investigation: inspections, evidence, reasoning, finale, save and restart
+[mobile-portrait] > apollo-quests.spec.ts > full Apollo investigation: inspections, evidence, reasoning, finale, save and restart
+[mobile-landscape] > apollo-quests.spec.ts > full Apollo investigation: inspections, evidence, reasoning, finale, save and restart
+[tablet] > apollo-quests.spec.ts > full Apollo investigation: inspections, evidence, reasoning, finale, save and restart
+[small-mobile] > apollo-quests.spec.ts > full Apollo investigation: inspections, evidence, reasoning, finale, save and restart
+[mobile-portrait] > apollo-quests.spec.ts > unavailable journey storage keeps the investigation playable and explains the session limit
+[mobile-landscape] > apollo-quests.spec.ts > unavailable journey storage keeps the investigation playable and explains the session limit
+[mobile-portrait] > inspection.spec.ts > failed model load preserves notes and navigation, and retry loads the real asset
+[mobile-landscape] > inspection.spec.ts > lost WebGL context shows a clear message without blocking the science
+[small-mobile] > inspection.spec.ts > NASA spacecraft, component science, camera controls and responsive navigation
+[small-mobile] > inspection.spec.ts > lost WebGL context shows a clear message without blocking the science
