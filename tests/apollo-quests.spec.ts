@@ -187,6 +187,8 @@ test('an incompatible saved checkpoint recovers safely and can be replaced by a 
       tx.onerror = () => { db.close(); reject(tx.error) }
     }
   }))
+  // The homepage now hydrates progress. Read the seeded checkpoint on a fresh load.
+  await page.reload()
   await page.getByRole('button', { name: 'Start Exploration' }).click()
   await page.getByRole('button', { name: 'Inspect the Lunar Module' }).click()
   await waitForInspection(page)

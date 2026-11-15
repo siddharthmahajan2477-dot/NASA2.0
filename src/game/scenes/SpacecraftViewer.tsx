@@ -31,8 +31,8 @@ class GraphicsBoundary extends Component<{ children: ReactNode }, { failed: bool
   render() { return this.state.failed ? <p role="alert" className="viewer-message">3D rendering is unavailable. Component explanations below remain accessible. Reload to retry graphics.</p> : this.props.children }
 }
 
-export default function SpacecraftViewer({ config, selected, onSelect, reset, reducedMotion }: {
-  config: SpacecraftConfig; selected: string | null; onSelect: (id: string) => void; reset: number; reducedMotion: boolean
+export default function SpacecraftViewer({ config, selected, onSelect, reset, reducedMotion, studio = false, zoom = 1, showMarkers = true }: {
+  config: SpacecraftConfig; selected: string | null; onSelect: (id: string) => void; reset: number; reducedMotion: boolean; studio?: boolean; zoom?: number; showMarkers?: boolean
 }) {
   const [model, setModel] = useState<Model | null>(null)
   const [error, setError] = useState(false)
@@ -85,27 +85,28 @@ export default function SpacecraftViewer({ config, selected, onSelect, reset, re
 
   return <div ref={viewport} className="spacecraft-viewport" data-model-state={error ? 'error' : model ? 'loaded' : 'loading'} data-model-meshes={model?.meshes} data-model-materials={model?.materials} data-model-textures={model?.textures} data-model-triangles={model?.triangles} data-camera-mode={selected ?? 'overview'}>
     <div ref={overlay} className="hotspot-layer" />
-    {error ? <div className="viewer-message" role="alert"><p>The NASA model could not be loaded. The component notes remain available.</p><button className="primary-button" onClick={() => { setError(false); setModel(null); setAttempt((value) => value + 1) }}>Retry model</button></div> : !model ? <p className="viewer-message" role="status">Loading the Lunar Module…</p> : <GraphicsBoundary>
+    {error ? <div className="viewer-message" role="alert"><p>The NASA model could not be loaded. The component notes remain available.</p><button className="primary-button" onClick={() => { setError(false); setModel(null); setAttempt((value) => value + 1) }}>Retry model</button></div> : !model ? <p className="viewer-message" role="status">{config.id === 'astronaut-guide' ? 'Loading your NASA spacesuit model…' : 'Loading the NASA spacecraft…'}</p> : <GraphicsBoundary>
       {lost ? <p className="viewer-message" role="alert">Graphics context lost. Reload to restore the scene. Your component notes remain available.</p> : null}
       <Suspense fallback={<p className="viewer-message" role="status">Starting spacecraft graphics… Component notes remain available.</p>}>
       <Canvas shadows frameloop="demand" dpr={[1, 1.5]} camera={{ position: [9, 6, 12], fov: 42, near: 0.1, far: 160 }} gl={{ preserveDrawingBuffer: true, antialias: true }} fallback={<p className="viewer-message" role="alert">3D rendering is unavailable. Component notes remain accessible below.</p>}>
-      <color attach="background" args={[config.environment.sky ?? '#080b0e']} />
-        <ambientLight intensity={config.environment.ambient ?? 0.32} />
+      {!studio && <color attach="background" args={[config.environment.sky ?? '#080b0e']} />}
+        <ambientLight intensity={studio ? 1.5 : config.environment.ambient ?? 0.32} />
+        {studio && <><hemisphereLight args={['#ffffff', '#66746f', 1.4]} /><directionalLight position={[-5, 4, -3]} intensity={2} /></>}
         <directionalLight position={config.environment.sun} intensity={3.6} castShadow shadow-mapSize={[1024, 1024]} shadow-camera-left={-12} shadow-camera-right={12} shadow-camera-top={12} shadow-camera-bottom={-12} shadow-normalBias={0.035} />
         <Suspense fallback={null}>
           <primitive object={model.scene} dispose={null} />
-          <Surface config={config} />
+          {studio ? <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.03, 0]} receiveShadow><planeGeometry args={[20, 20]} /><shadowMaterial transparent opacity={0.12} /></mesh> : <Surface config={config} />}
           {/* Inspection geometry and sunlight are static. Camera motion does not
               change their shadows; future object animation must dirty the map. */}
           <BakeShadows />
-          {config.components.filter((component) => component.markerOffset && (component.showMarkerInOverview !== false || selected === component.id)).map((component) => <Line key={component.id} points={[component.position, component.position.map((value, index) => value + component.markerOffset![index]) as Point3]} color="#c1d8dc" lineWidth={1} />)}
-          {config.components.map((component, index) => component.showMarkerInOverview === false && selected !== component.id ? null : <Html portal={overlay} key={component.id} position={component.position.map((value, axis) => value + (component.markerOffset?.[axis] ?? 0)) as Point3} center zIndexRange={selected === component.id ? [25, 21] : [20, 0]} occlude={[{ current: model.scene }]}>
+          {(showMarkers ? config.components : []).filter((component) => component.markerOffset && (component.showMarkerInOverview !== false || selected === component.id)).map((component) => <Line key={component.id} points={[component.position, component.position.map((value, index) => value + component.markerOffset![index]) as Point3]} color="#c1d8dc" lineWidth={1} />)}
+          {(showMarkers ? config.components : []).map((component, index) => component.showMarkerInOverview === false && selected !== component.id ? null : <Html portal={overlay} key={component.id} position={component.position.map((value, axis) => value + (component.markerOffset?.[axis] ?? 0)) as Point3} center zIndexRange={selected === component.id ? [25, 21] : [20, 0]} occlude={[{ current: model.scene }]}>
             {component.compactLabelOffset ? <div className="compact-hotspot" style={{ '--marker-x': component.compactLabelOffset[0] + 'px', '--marker-y': component.compactLabelOffset[1] + 'px' } as CSSProperties}>
               <svg className="compact-marker-connector" aria-hidden="true"><line x1="0" y1="0" x2={component.compactLabelOffset[0]} y2={component.compactLabelOffset[1]} stroke="#c1d8dc" /></svg>
               <HotspotButton name={component.name} selected={selected === component.id} onSelect={() => onSelect(component.id)} number={index + 1} />
             </div> : <HotspotButton name={component.name} selected={selected === component.id} onSelect={() => onSelect(component.id)} number={index + 1} />}
           </Html>)}
-          <CameraRig model={model} config={config} selected={selected} reset={reset} reducedMotion={reducedMotion} viewport={viewport} />
+          <CameraRig model={model} config={config} selected={selected} reset={reset} reducedMotion={reducedMotion} viewport={viewport} zoom={zoom} />
           <ContextEvents onLost={setLost} />
         </Suspense>
       </Canvas>
@@ -136,8 +137,8 @@ function ContextEvents({ onLost }: { onLost: (lost: boolean) => void }) {
   return null
 }
 
-function CameraRig({ model, config, selected, reset, reducedMotion, viewport }: {
-  model: Model; config: SpacecraftConfig; selected: string | null; reset: number; reducedMotion: boolean; viewport: React.RefObject<HTMLDivElement | null>
+function CameraRig({ model, config, selected, reset, reducedMotion, viewport, zoom }: {
+  model: Model; config: SpacecraftConfig; selected: string | null; reset: number; reducedMotion: boolean; viewport: React.RefObject<HTMLDivElement | null>; zoom: number
 }) {
   const controls = useRef<OrbitControlsType>(null)
   const camera = useThree((state) => state.camera) as PerspectiveCamera
@@ -165,7 +166,7 @@ function CameraRig({ model, config, selected, reset, reducedMotion, viewport }: 
   useEffect(() => {
     const target = new Vector3(...(component?.position ?? model.center))
     const direction = new Vector3(...(component?.view ?? config.cameraDirection)).normalize()
-    const distance = component ? Math.max(clearance, framing * 0.55) : framing
+    const distance = Math.max(clearance, (component ? framing * 0.55 : framing) * zoom)
     const position = target.clone().addScaledVector(direction, distance)
     if (!controls.current) return
     const area = viewport.current?.getBoundingClientRect()
@@ -176,7 +177,7 @@ function CameraRig({ model, config, selected, reset, reducedMotion, viewport }: 
       camera.position.copy(position); controls.current.target.copy(target); controls.current.update(); destination.current = null
     } else destination.current = { position, target }
     invalidate()
-  }, [camera, clearance, component, config.cameraDirection, framing, invalidate, model.center, reducedMotion, reset, selected, viewport])
+  }, [camera, clearance, component, config.cameraDirection, framing, invalidate, model.center, reducedMotion, reset, selected, viewport, zoom])
   useFrame((_, delta) => {
     if (!destination.current || !controls.current) return
     const amount = 1 - Math.exp(-8 * Math.min(delta, 0.05))

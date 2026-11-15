@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { missionFilms, youtubeEmbedUrl, youtubeWatchUrl, type MissionFilm as FilmConfig } from '../data/missionFilms'
 import { useAppStore, type Screen } from '../app/store'
-import ListenMode from './ListenMode'
 const destinations: Record<string, Screen> = { 'apollo-11': 'briefing', ingenuity: 'ingenuity-briefing', 'near-shoemaker': 'near-briefing' }
 
 // A keyed child isolates film selection and destroys playback on mission changes.
@@ -33,7 +32,6 @@ function FilmPage({ film }: { film: FilmConfig }) {
     </> : <div className="film-empty" role="status"><p>{available ? 'YouTube playback may be blocked or unavailable. Try the direct link, or continue your mission.' : 'This film is not currently configured for playback. Your mission is ready to explore.'}</p>{available && <button onClick={watch}>Retry Film</button>}</div>}
     {videoId && <p><a href={youtubeWatchUrl(videoId)} target="_blank" rel="noopener noreferrer">Watch on YouTube</a></p>}
     <p className="film-privacy">Optional YouTube player, using the privacy-enhanced domain. YouTube still processes playback-related data. Its native controls provide play, pause, seek, volume and fullscreen where supported. Playback restrictions may appear inside the player; the app cannot detect every iframe failure.</p>
-    <ListenMode text={film.introduction} title="the mission introduction" />
     <div className="welcome-actions"><button className="primary-button" onClick={() => navigate(destinations[film.id])}>Continue to Mission</button><button className="text-button" onClick={() => navigate(destinations[film.id])}>Skip to Mission</button></div>
     <a href={film.source} target="_blank" rel="noopener noreferrer">Official mission history &amp; sources</a>
     <p>Videos remain hosted by their original YouTube publishers. Credits and rights remain with their respective creators. Independent educational project. Not affiliated with or endorsed by NASA.</p>

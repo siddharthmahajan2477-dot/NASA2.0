@@ -1,4 +1,3 @@
-import ListenMode from '../../components/ListenMode'
 import { useEffect, useRef, useState, type CSSProperties } from 'react'
 import type { StoreApi, UseBoundStore } from 'zustand'
 import { requirements, type Draft, type EvidenceRecord, type QuestEvent, type Task, type MissionConfig } from './engine'
@@ -30,7 +29,7 @@ export function MissionQuestHeader({ mission, useMissionStore, onRestart }: Ques
         const state = progress.completed.includes(item.id) ? 'completed' : index === progress.current ? 'active' : 'locked'
         return <li key={item.id} data-state={state} aria-current={state === 'active' ? 'step' : undefined}><span className="quest-number">{index + 1}</span><span>{item.title}<small>{state}</small></span></li>
       })}</ol>
-      {progress.phase === 'active' ? <><p className="quest-opening">{quest.opening}</p><ListenMode text={quest.opening} title={quest.title}/><ol className="objective-tracker" aria-label="Current objectives">{requirements(mission, progress).map((item) => <li key={item.id} data-done={item.done}><span aria-hidden="true">{item.done ? '✓' : '○'}</span>{item.label}<span className="sr-only">{item.done ? ' completed' : ' required'}</span></li>)}<li data-done={progress.completed.includes(quest.id)}><span aria-hidden="true">{progress.completed.includes(quest.id) ? '✓' : '○'}</span>Validate the evidence-based reconstruction</li></ol><a className="quest-work-link" href="#quest-workbench">Open evidence & reconstruction ↓</a></> : null}
+      {progress.phase === 'active' ? <><p className="quest-opening">{quest.opening}</p><ol className="objective-tracker" aria-label="Current objectives">{requirements(mission, progress).map((item) => <li key={item.id} data-done={item.done}><span aria-hidden="true">{item.done ? '✓' : '○'}</span>{item.label}<span className="sr-only">{item.done ? ' completed' : ' required'}</span></li>)}<li data-done={progress.completed.includes(quest.id)}><span aria-hidden="true">{progress.completed.includes(quest.id) ? '✓' : '○'}</span>Validate the evidence-based reconstruction</li></ol><a className="quest-work-link" href="#quest-workbench">Open evidence & reconstruction ↓</a></> : null}
     </>}
     <p className={`journey-storage ${warning ? 'has-warning' : ''}`} aria-live="polite">{ready ? status : 'Checking local investigation storage…'}</p>
     {confirm ? <div className="restart-confirm" role="alertdialog" aria-modal="false" aria-labelledby="restart-title" aria-describedby="restart-description" onKeyDown={(event) => { if (event.key === 'Escape') { setConfirm(false); restart.current?.focus() } }}>
@@ -51,7 +50,7 @@ export function MissionQuestWorkbench({ mission, useMissionStore }: QuestProps) 
   return <section id="quest-workbench" className="quest-workbench" aria-label="Evidence and reconstruction">
     <div className="workbench-intro"><p className="eyebrow">FIELD RECORDS / {progress.evidence.length} DISCOVERED</p><h2>Inspect. Read. Make the connection.</h2><p>Use the spacecraft above to inspect required components. Open the records below, then collect the evidence you need.</p></div>
     <div className="evidence-grid">{quest.evidenceIds.map((id) => <EvidenceCard mission={mission} useMissionStore={useMissionStore} key={id} record={mission.evidence.find((record) => record.id === id)!} />)}</div>
-    <div className="evidence-listen"><h3>Listen to the evidence</h3>{quest.evidenceIds.map(id=>{const record=mission.evidence.find(r=>r.id===id)!;return <ListenMode key={id} title={record.title} text={[record.title,record.context,record.body,...(record.sections??[]).flatMap(s=>[s.heading,s.body]),record.relevance].filter(Boolean).join('\n\n')}/>})}</div><form className="reasoning-board" onSubmit={(event) => { event.preventDefault(); send({ type: 'submit' }); requestAnimationFrame(() => feedback.current?.focus({ preventScroll: true })) }}>
+    <form className="reasoning-board" onSubmit={(event) => { event.preventDefault(); send({ type: 'submit' }); requestAnimationFrame(() => feedback.current?.focus({ preventScroll: true })) }}>
       <p className="eyebrow">YOUR RECONSTRUCTION</p>
       <fieldset disabled={completed} className="tasks-fieldset"><legend className="sr-only">{quest.title} challenges</legend>{quest.tasks.map((task) => <TaskControl key={task.id} task={task} draft={draft} send={send} />)}</fieldset>
       {progress.feedback ? <p ref={feedback} tabIndex={-1} role="status" className={`quest-feedback ${progress.feedback.kind}`}>{progress.feedback.text}</p> : null}
